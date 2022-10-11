@@ -1,6 +1,6 @@
 {
   "name": "github-action-tester",
-  "version": "0.0.2",
+  "version": "0.0.3-0",
   "description": "Used to test workflows available in the repo github-action",
   "scripts": {
     "test": "echo \"No test specified\" && exit 1"
