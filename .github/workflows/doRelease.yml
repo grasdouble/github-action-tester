@@ -24,6 +24,6 @@ on:
 
 jobs:
   CreateRelease:
-    uses: grasdouble/github-action/.github/workflows/gitflow-release.yml@mgitflow-release
+    uses: grasdouble/github-action/.github/workflows/gitflow-release.yml@gitflow-release
     with:
       scope: ${{ inputs.scope }}
