@@ -22,7 +22,8 @@ on:
           - prepatch
           - prerelease
 
-CreateRelease:
+jobs:
+  CreateRelease:
     uses: grasdouble/github-action/.github/workflows/gitflow-release.yml@mgitflow-release
     with:
       scope: ${{ inputs.scope }}
