@@ -1,0 +1,28 @@
+# This workflow will be able to manage:
+# - creation of a release branch
+# - create a PR to main and develop
+
+name: Gitflow - Create Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      scope:
+        description: 'Release scope'
+        type: choice
+        default: nothing
+        required: true
+        options:
+          - nothing
+          - major
+          - premajor
+          - minor
+          - preminor
+          - patch
+          - prepatch
+          - prerelease
+
+CreateRelease:
+    uses: grasdouble/github-action/.github/workflows/gitflow-release.yml@mgitflow-release
+    with:
+      scope: ${{ inputs.scope }}
